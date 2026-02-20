@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <!-- 
-      Meta di base: charset UTF-8 per supportare accenti italiani
-      e viewport per layout responsive mobile-first 
-    -->
+    <!-- UTF-8 per gli accenti, viewport per il responsive -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO: descrizione e parole chiave per i motori di ricerca -->
+    <!-- Meta SEO: descrizione e keywords per indicizzazione -->
     <meta name="description" content="Maccarese S.p.A. - Azienda Agricola Benefit. Report di Sostenibilità 2024: CO₂, biodiversità, energia rinnovabile.">
     <meta name="keywords" content="sostenibilità, agricoltura, Maccarese, biogas, mandorleto, latte, biodiversità">
     <meta name="author" content="Maccarese S.p.A. Società Agricola Benefit">
 
     <title>Maccarese - Report Sostenibilità 2024</title>
 
-    <!-- Collegamento al foglio di stile esterno -->
+    <!-- Foglio di stile separato per rispettare il principio di separazione struttura/presentazione -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 
-      HEADER PRINCIPALE
-      Contiene il logo Maccarese e il titolo della pagina.
-      Il gradiente rosso e il testo bianco sono definiti in style.css.
-    -->
+    <!-- Header: logo + titolo, sfondo rosso brand definito in style.css -->
     <header class="main-header">
         <div class="container">
             <div class="header-content">
-                <!-- Logo aziendale: immagine statica senza filtri (mantiene i colori originali) -->
+                <!-- Logo: alt descrittivo per accessibilità screen reader -->
                 <img src="maccarese-logo.jpg" alt="Logo Maccarese S.p.A." class="logo">
                 
-                <!-- Testo di intestazione: nome azienda e sottotitolo -->
+                <!-- Titolo e sottotitolo azienda -->
                 <div class="header-text">
                     <h1>Maccarese S.p.A.</h1>
                     <p class="subtitle">Società Agricola Benefit • Report Sostenibilità 2024</p>
@@ -40,13 +33,10 @@
         </div>
     </header>
 
-    <!-- MAIN: contenuto principale della pagina -->
+    <!-- main: delimita il contenuto principale, ignorato dai screen reader per la navigazione -->
     <main>
 
-        <!-- 
-          SEZIONE HERO
-          Breve introduzione all’azienda e al tema della sostenibilità.
-        -->
+        <!-- Hero: elevator pitch con i dati chiave in evidenza tramite <strong> -->
         <section class="hero-section">
             <div class="container">
                 <h2>Un'Azienda Agricola all'Avanguardia della Sostenibilità</h2>
@@ -61,16 +51,13 @@
             </div>
         </section>
 
-        <!-- 
-          SEZIONE CHI SIAMO
-          Struttura a due colonne: testo descrittivo a sinistra e timeline storica a destra.
-        -->
+        <!-- Chi siamo: due colonne su desktop (grid), una su mobile -->
         <section class="about-section">
             <div class="container">
                 <h2>Chi Siamo</h2>
 
                 <div class="about-content">
-                    <!-- COLONNA SINISTRA: descrizione estesa dell’azienda -->
+                    <!-- Testo narrativo: storia e missione -->
                     <div class="about-text">
                         <p>
                             L'<strong>Azienda Maccarese S.p.A.</strong> nasce il 20 marzo
@@ -107,7 +94,7 @@
                         </p>
                     </div>
 
-                    <!-- COLONNA DESTRA: timeline sintetica dei momenti più importanti -->
+                    <!-- Timeline: 6 milestone scelte tra quelle più rilevanti per la sostenibilità -->
                     <div class="timeline-highlight">
                         <h3>📅 Momenti Storici</h3>
 
@@ -163,10 +150,7 @@
             </div>
         </section>
 
-        <!-- 
-          SEZIONE KPI DI SOSTENIBILITÀ
-          Griglia di card con i principali indicatori ambientali, sociali ed economici.
-        -->
+        <!-- KPI: 6 card che coprono le dimensioni ESG; griglia auto-fit in style.css -->
         <section class="kpi-section">
             <div class="container">
                 <h2>Indicatori di Sostenibilità 2024</h2>
@@ -176,7 +160,7 @@
                 </p>
 
                 <div class="kpi-grid">
-                    <!-- Card 1: CO2 ridotta -->
+                    <!-- CO₂: dato principale del mandorleto (24.000t) + biogas + fotovoltaico -->
                     <article class="kpi-card">
                         <div class="kpi-header">
                             <div class="kpi-icon" aria-hidden="true">🌱</div>
@@ -195,7 +179,7 @@
                         <span class="sdg-badge">SDG 13: Azione Climatica</span>
                     </article>
 
-                    <!-- Card 2: Energia rinnovabile -->
+                    <!-- Energia rinnovabile -->
                     <article class="kpi-card">
                         <div class="kpi-header">
                             <div class="kpi-icon" aria-hidden="true">⚡</div>
@@ -213,7 +197,7 @@
                         <span class="sdg-badge">SDG 7: Energia Pulita</span>
                     </article>
 
-                    <!-- Card 3: Biodiversità -->
+                    <!-- Biodiversità: 500 ettari naturali, 194 specie censite -->
                     <article class="kpi-card">
                         <div class="kpi-header">
                             <div class="kpi-icon" aria-hidden="true">🦉</div>
@@ -231,7 +215,7 @@
                         <span class="sdg-badge">SDG 15: Vita sulla Terra</span>
                     </article>
 
-                    <!-- Card 4: Produzione latte -->
+                    <!-- Produzione latte -->
                     <article class="kpi-card">
                         <div class="kpi-header">
                             <div class="kpi-icon" aria-hidden="true">🥛</div>
@@ -249,7 +233,7 @@
                         <span class="sdg-badge">SDG 2: Lotta alla Fame</span>
                     </article>
 
-                    <!-- Card 5: Mandorleto -->
+                    <!-- Mandorleto: impianto superintensivo avviato nel 2019 -->
                     <article class="kpi-card">
                         <div class="kpi-header">
                             <div class="kpi-icon" aria-hidden="true">🌰</div>
@@ -267,7 +251,7 @@
                         <span class="sdg-badge">SDG 8: Lavoro Dignitoso</span>
                     </article>
 
-                    <!-- Card 6: Certificazioni -->
+                    <!-- Certificazioni -->
                     <article class="kpi-card">
                         <div class="kpi-header">
                             <div class="kpi-icon" aria-hidden="true">🏆</div>
@@ -289,10 +273,7 @@
             </div>
         </section>
 
-        <!-- 
-          SEZIONE DOWNLOAD REPORT
-          Call to action per scaricare il PDF ufficiale della Relazione di Impatto 2024.
-        -->
+        <!-- Download: CTA principale della pagina, sfondo rosso per risaltare -->
         <section class="download-section">
             <div class="container">
                 <h2>Scarica il Report Completo</h2>
@@ -302,7 +283,7 @@
                     impegni 2025.
                 </p>
 
-                <!-- Link al PDF con attributo download per suggerire il salvataggio del file -->
+                <!-- attributo download: suggerisce al browser di salvare il file invece di aprirlo -->
                 <a href="maccarese-relazione-impatto-2024.pdf" class="download-btn" download>
                     📄 Scarica PDF Completo (3.6 MB)
                 </a>
@@ -315,10 +296,7 @@
 
     </main>
 
-    <!-- 
-      FOOTER
-      Informazioni di contatto, link rapidi e nota di credito del progetto.
-    -->
+    <!-- Footer: 3 colonne con auto-fit, si impila su mobile -->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
